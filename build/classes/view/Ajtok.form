@@ -104,6 +104,9 @@
           <Image iconType="3" name="/view/let&#xf6;lt&#xe9;s.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ajto1MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="felfedesBtn">
       <Properties>

@@ -8,6 +8,8 @@ package controller;
  *
  * @author SasGyula(SZF_2023_20
  */
+import modell.AjtokModell;
 public class AjtokController {
-    
+    private int kattintott;
+    AjtokModell AM = new AjtokModell();
 }

@@ -4,6 +4,8 @@
  */
 package view;
 
+import modell.AjtokModell;
+
 /**
  *
  * @author SasGyula(SZF_2023_20
@@ -13,8 +15,10 @@ public class Ajtok extends javax.swing.JFrame {
     /**
      * Creates new form Ajtok
      */
+    
     public Ajtok() {
         initComponents();
+
     }
 
     /**
@@ -50,6 +54,11 @@ public class Ajtok extends javax.swing.JFrame {
         ajto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/letöltés.png"))); // NOI18N
 
         ajto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/letöltés.png"))); // NOI18N
+        ajto1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ajto1MouseClicked(evt);
+            }
+        });
 
         felfedesBtn.setText("Felfedés");
 
@@ -169,6 +178,10 @@ public class Ajtok extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void ajto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ajto1MouseClicked
+        
+    }//GEN-LAST:event_ajto1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -195,12 +208,13 @@ public class Ajtok extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Ajtok.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Ajtok().setVisible(true);
             }
+            
         });
     }
 
